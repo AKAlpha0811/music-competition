@@ -3,7 +3,9 @@ export const competition = {
   school: 'Raha International School', organiser: 'Academic Committee',
   date: null as string | null, venue: null as string | null,
   timing: 'Term 2 or later', timingStatus: 'Proposed',
-  audience: 'The draft uses Grade 1–5, Grade 6–9 and Grade 10–12 pools. Equivalent grades across schools, participating schools and final entry conditions are to be confirmed. A mixed-grade group rule must be agreed before registration opens.',
+  audience: 'The draft uses Grade 1–5, Grade 6–9 and Grade 10–12 pools. Equivalent grades across schools and final entry conditions are to be confirmed. A mixed-grade group rule must be agreed before registration opens.',
+  participatingSchools: ['KCC', 'Gardens', 'GEMS American Academy'],
+  repertoire: 'Free choice of piece — performers may choose their own song or instrumental work.',
   formats: ['Solo and group performances', 'Instrumental and vocal performances'],
   proposedMinutes: 4,
   pools: [
@@ -15,10 +17,10 @@ export const competition = {
   changeDeadline: null as string | null,
   rules: 'Draft for school and Music staff review. Solo and group instrumental or vocal performances are under consideration. Final rules must be agreed and published before entries open.',
   performanceReview: [
-    'Music staff should confirm time limits, backing tracks, accompaniment, sound-check arrangements and repertoire requirements.',
+    'Music staff should confirm time limits, backing tracks, accompaniment, sound-check arrangements and remaining performance arrangements. Repertoire is free choice.',
     'Publish how officials handle technical interruptions and time overruns.',
   ],
-  judging: 'The judging panel is not confirmed. Ms. Michelle and possible judges from GEMS and Gardens have been discussed. Planning notes also suggest one judge from KCC, one from Gardens and possibly one from GAA. These are discussion points, not appointments; availability and conflicts of interest need checking.',
+  judging: 'The judging panel is not confirmed. Ms. Michelle and possible judges from Gardens and GEMS American Academy have been discussed. Planning notes also suggest one judge from KCC, one from Gardens and possibly one from GEMS American Academy. These are discussion points, not appointments; availability and conflicts of interest need checking.',
   rubric: [
     { criterion: 'Musical interpretation', points: 35 },
     { criterion: 'Technical control', points: 30 },
@@ -47,6 +49,6 @@ export const sampleEntries = [
   { id: 'DEMO-002', name: 'Sample Ensemble B', grade: 'Grade 8', school: 'Sample School B', mode: 'Group', type: 'Vocal', duration: '3:45' },
   { id: 'DEMO-003', name: 'Sample Solo C', grade: 'Grade 11', school: 'Sample School C', mode: 'Solo', type: 'Instrumental', duration: '2:50' },
 ];
-export const initialAnnouncement = 'The format and rules draft is ready for school and Music staff review. Three grade pools are proposed, and the cash prize allocation is confirmed at AED 150 across all pools. Dates, participating schools and final entry rules are to be confirmed. Entries are not open.';
+export const initialAnnouncement = 'The format and rules draft is ready for school and Music staff review. Three grade pools are proposed, and the cash prize allocation is confirmed at AED 150 across all pools. KCC, Gardens and GEMS American Academy are confirmed as participating schools, and repertoire is free choice. Dates and final entry rules are to be confirmed. Entries are not open.';
 export const resultPlaces = ['1st place', '2nd place', '3rd place'];
 export const cashPrizeTotal = competition.pools.reduce((total, pool) => total + pool.awards.reduce((sum, amount) => sum + amount, 0), 0);

@@ -12,7 +12,7 @@ The first GitHub Pages deployment succeeded (workflow run #1, source commit `0aa
 
 No domain was purchased or configured. The site currently uses the GitHub Pages address above. A separately owned domain can be connected later through Pages settings and the domain provider’s DNS.
 
-The site remains a prototype. The registration form does not submit or persist entries, and Organiser Preview is a public demo with no authentication or live data.
+The site remains a prototype. The registration form does not submit or persist entries, and Organiser Preview is a local development demo and is excluded from the published site. It has no authentication or live data.
 
 ## Project
 
@@ -32,4 +32,4 @@ The workflow `.github/workflows/deploy-music.yml` builds and deploys relevant ch
 
 ## Echo design update
 
-Echo Music Competition is the confirmed event name. The redesigned site includes a black-and-gold default theme and a white-and-gold light theme. Use the Light/Dark button in the header; the choice lasts for the current tab session. All six pages and existing public links are retained. Performance Order is the clearer menu label for the Programme page.
+Echo Music Competition is the confirmed event name. The redesigned site includes a black-and-gold default theme and a white-and-gold light theme. Use the Light/Dark button in the header; the choice lasts for the current tab session. Five student-facing pages are public. Organiser Preview is available only in local development; public links to it are removed. Performance Order is the clearer menu label for the Programme page.

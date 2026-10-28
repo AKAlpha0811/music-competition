@@ -1,4 +1,4 @@
-# Raha Music Competition
+# Echo Music Competition
 
 Academic Committee · Raha International School · Ignite Your Spark
 
@@ -28,3 +28,8 @@ npm run build
 The workflow `.github/workflows/deploy-music.yml` builds and deploys relevant changes pushed to `main`. GitHub Pages is configured to use GitHub Actions. A manual run is also available in Actions.
 
 `DEPLOYMENT.md` and the project verification log include the earlier preparation history. This README records the current published state.
+
+
+## Echo design update
+
+Echo Music Competition is the confirmed event name. The redesigned site includes a black-and-gold default theme and a white-and-gold light theme. Use the Light/Dark button in the header; the choice lasts for the current tab session. All six pages and existing public links are retained. Performance Order is the clearer menu label for the Programme page.

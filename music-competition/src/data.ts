@@ -1,5 +1,5 @@
 export const competition = {
-  name: 'Raha Music Competition', slogan: 'Ignite Your Spark',
+  name: 'Echo Music Competition', shortName: 'Echo', slogan: 'Ignite Your Spark',
   school: 'Raha International School', organiser: 'Academic Committee',
   date: null as string | null, venue: null as string | null,
   timing: 'Term 2 or later', timingStatus: 'Proposed',
@@ -49,6 +49,6 @@ export const sampleEntries = [
   { id: 'DEMO-002', name: 'Sample Ensemble B', grade: 'Grade 8', school: 'Sample School B', mode: 'Group', type: 'Vocal', duration: '3:45' },
   { id: 'DEMO-003', name: 'Sample Solo C', grade: 'Grade 11', school: 'Sample School C', mode: 'Solo', type: 'Instrumental', duration: '2:50' },
 ];
-export const initialAnnouncement = 'The format and rules draft is ready for school and Music staff review. Three grade pools are proposed, and the cash prize allocation is confirmed at AED 150 across all pools. KCC, Gardens and GEMS American Academy are confirmed as participating schools, and repertoire is free choice. Dates and final entry rules are to be confirmed. Entries are not open.';
+export const initialAnnouncement = 'Introducing Echo Music Competition. The format and rules draft is ready for school and Music staff review. Three grade pools are proposed, and the cash prize allocation is confirmed at AED 150 across all pools. KCC, Gardens and GEMS American Academy are confirmed as participating schools, and repertoire is free choice. Dates and final entry rules are to be confirmed. Entries are not open.';
 export const resultPlaces = ['1st place', '2nd place', '3rd place'];
 export const cashPrizeTotal = competition.pools.reduce((total, pool) => total + pool.awards.reduce((sum, amount) => sum + amount, 0), 0);

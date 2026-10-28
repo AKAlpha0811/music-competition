@@ -1,4 +1,4 @@
-# Echo Music Competition
+# Écho Music Competition
 
 Academic Committee · Raha International School · Ignite Your Spark
 
@@ -30,6 +30,6 @@ The workflow `.github/workflows/deploy-music.yml` builds and deploys relevant ch
 `DEPLOYMENT.md` and the project verification log include the earlier preparation history. This README records the current published state.
 
 
-## Echo design update
+## Écho design update
 
-Echo Music Competition is the confirmed event name. The redesigned site includes a black-and-gold default theme and a white-and-gold light theme. Use the Light/Dark button in the header; the choice lasts for the current tab session. Five student-facing pages are public. Organiser Preview is available only in local development; public links to it are removed. Performance Order is the clearer menu label for the Programme page.
+Écho Music Competition is the confirmed event name. The redesigned site includes a black-and-gold default theme and a white-and-gold light theme. Use the Light/Dark button in the header; the choice lasts for the current tab session. Five student-facing pages are public. Organiser Preview is available only in local development; public links to it are removed. Performance Order is the clearer menu label for the Programme page.

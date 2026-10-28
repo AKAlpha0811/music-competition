@@ -2,7 +2,7 @@
 
 ## 현재 상태
 
-Echo Music Competition은 GitHub Pages에 공개되어 있습니다: https://akalpha0811.github.io/music-competition/ . 현재 업데이트는 Echo 명칭과 블랙·골드/화이트·골드 디자인을 반영합니다. 도메인을 구매하거나 DNS를 바꾸지 않았습니다. `music-competition.com`은 예시 주소이며 소유하거나 연결한 도메인이 아닙니다.
+Écho Music Competition은 GitHub Pages에 공개되어 있습니다: https://akalpha0811.github.io/music-competition/ . 현재 업데이트는 Écho 명칭과 블랙·골드/화이트·골드 디자인을 반영합니다. 도메인을 구매하거나 DNS를 바꾸지 않았습니다. `music-competition.com`은 예시 주소이며 소유하거나 연결한 도메인이 아닙니다.
 
 ## 저장소 구조
 

@@ -1,4 +1,4 @@
-# Echo Music Competition · 로컬 프로토타입
+# Écho Music Competition · 로컬 프로토타입
 
 Raha International School Academic Committee의 음악 대회 전용 React + TypeScript + Vite 웹사이트입니다. 수학·영어 대회와 독립된 프로젝트입니다. 화면은 영어이며 설명은 한국어로 작성했습니다.
 
@@ -37,7 +37,7 @@ URL 해시로 페이지를 이동합니다. `#competition`, `#registration`, `#p
 - `src/CompetitionDetails.tsx`: 규칙·심사·예산 안내와 재사용 상금 표
 - `src/main.tsx`: 페이지 구성과 문구, 폼 항목·검증·미리보기, 운영 데모 상호작용
 - `src/styles.css`: 다크/라이트 색상 토큰, 타이포그래피, 모바일 메뉴, 반응형 레이아웃, reduced-motion
-- `src/Home.tsx`: Echo 메인 화면, 자체 SVG 공명 그래픽, 참가 학교·안내·공지 구성
+- `src/Home.tsx`: Écho 메인 화면, 자체 SVG 공명 그래픽, 참가 학교·안내·공지 구성
 - `src/demoRepository.ts`: 데이터 접근 경계. 실제 API가 생기면 이 어댑터부터 교체
 - `index.html`: 검색용 설명·기본 제목. 실제 이름 변경 시 이 메타데이터도 함께 수정
 
@@ -88,11 +88,11 @@ Organiser Preview는 `npm run dev` 로컬 개발 환경에서만 표시되는 �
 `src/data.ts`의 `participatingSchools`와 `repertoire`에 확정 정보를 분리했습니다. Home·Competition·Registration에 공통 반영되며, 학년 대응·혼합 학년 그룹·공연 시간·심사위원 확정과는 구분합니다. KCC와 Gardens의 전체 학교명은 제공되지 않아 임의로 확장하지 않았습니다.
 
 
-## Echo 디자인 개편
+## Écho 디자인 개편
 
-대회명은 **Echo Music Competition**으로 확정했습니다. 기본 화면은 블랙·골드이며 헤더의 Light/Dark 버튼으로 화이트·골드 화면을 전환합니다. 모드는 현재 탭에서 페이지 이동 시 유지되지만 새로고침하면 기본 다크로 돌아옵니다. 테마 선택에도 브라우저 저장소를 사용하지 않습니다. 색상은 `styles.css`의 `:root` / `:root[data-theme=light]` 토큰에서 수정할 수 있습니다.
+대회명은 **Écho Music Competition**으로 확정했습니다. 기본 화면은 블랙·골드이며 헤더의 Light/Dark 버튼으로 화이트·골드 화면을 전환합니다. 모드는 현재 탭에서 페이지 이동 시 유지되지만 새로고침하면 기본 다크로 돌아옵니다. 테마 선택에도 브라우저 저장소를 사용하지 않습니다. 색상은 `styles.css`의 `:root` / `:root[data-theme=light]` 토큰에서 수정할 수 있습니다.
 
-메뉴의 **Performance Order**는 기존 Programme 페이지이며 `#programme` 링크를 유지합니다. 공개 URL과 저장소 이름은 기존 `music-competition`을 유지하므로 공유 링크가 계속 동작합니다. 대회명, 페이지 제목, 헤더·푸터 및 패키지 이름은 Echo로 변경했습니다.
+메뉴의 **Performance Order**는 기존 Programme 페이지이며 `#programme` 링크를 유지합니다. 공개 URL과 저장소 이름은 기존 `music-competition`을 유지하므로 공유 링크가 계속 동작합니다. 대회명, 페이지 제목, 헤더·푸터 및 패키지 이름은 Écho로 변경했습니다.
 
 
 ## 학생 공개 버전

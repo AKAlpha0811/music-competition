@@ -62,3 +62,38 @@
 - GitHub 로그인 화면 확인. GitHub 로그인 전이므로 원격 저장소 생성·푸시·Actions 실행·Pages 배포는 하지 않음
 - 도메인 구매·소유권 확인·DNS·HTTPS 연결은 하지 않음
 - 이번 배포 설정 변경에 대한 새 브라우저 렌더링 검사는 하지 않음. 실제 GitHub Actions와 원격 주소 검증은 로그인 후 필요
+
+
+## 2026-10-28 실제 GitHub Pages 배포
+
+- 공개 저장소 https://github.com/AKAlpha0811/music-competition 생성, 소스 15개 파일 웹 편집기로 등록
+- 원격 공개 저장소를 다시 읽어 최초 14개 소스·문서가 준비한 원본과 바이트 단위로 일치함 확인
+- GitHub Pages Source를 GitHub Actions로 설정
+- Deploy Music Competition #1 성공: source commit 0aaadbf, 총 38초, deploy 작업 32초
+- 실제 공개 주소 https://akalpha0811.github.io/music-competition/ 에서 Home 및 나머지 5개 페이지 로드 확인
+- 공개 주소에서 빈 폼 오류, Group 필드, 가상 공연 순서 이동과 데모 초기화 확인
+- 독립 도메인 구매·연결 없음. 실제 접수·인증·DB 기능은 여전히 없음
+
+
+## 참가 학교·자유곡 확정 업데이트
+
+- KCC, Gardens, GEMS American Academy 참가 및 자유곡을 data.ts에 확정 정보로 추가
+- Home·Competition·Registration과 공지의 참가 학교 미정 문구 교체. 심사위원 위촉과 기타 규칙은 미확정으로 유지
+- npm run build 통과
+- GitHub 웹 편집기에서 main.tsx가 중복 삽입된 것을 원격 빌드 오류로 발견하여 전체 선택·교체로 수정
+- 원격 수정 파일 3개가 로컬 원본과 바이트 단위로 일치하는지 재확인
+
+- 최종 배포 #5 (0089bdb) 성공. 공개 주소의 Home·Competition·Registration에서 참가 학교 3곳과 자유곡 표시를 확인. 화면 캡처: previews/confirmed-schools-repertoire.png
+
+
+## Echo 디자인 개편 · 2026-10-28
+
+- 이름·메타데이터·사이트 워드마크·페이지 제목·푸터·패키지 이름 Echo로 변경
+- 자체 SVG 공명 그래픽과 새 Home 구성. 기본 다크 및 세션 전용 라이트 테마
+- 타입 검사와 Vite 프로덕션 빌드 통과
+- 1440px 두 테마 모든 페이지 탐색 확인. 320·390·820px Home 문서 가로 넘침 없음
+- 390px 메뉴 Escape 닫기, 필수값 오류, Group/Solo 필드 전환 확인
+- 가상 그룹 입력 미리보기 성공. 테마 전환 중 미리보기 내용 유지 확인
+- 샘플 순서 변경·공지 편집과 Home 반영 확인
+- 라이트 Competition 및 다크/라이트 Home 시각 확인. 스크린리더·실기기 전수검사는 미실행
+- 페이지명 Programme의 URL은 유지하고 메뉴만 Performance Order로 표시

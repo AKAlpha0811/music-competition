@@ -100,3 +100,43 @@ footer::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:no
  radial-gradient(.9px .9px at 91% 18%,#e7e1ff 50%,transparent 100%)}
 @media(max-width:760px){main::before{top:900px}}
 @media(forced-colors:active){main::before,footer::before{display:none}footer{background:Canvas;color:CanvasText}}
+
+/* Focused mobile usability pass; desktop layout is unchanged. */
+@media(max-width:560px){
+ header{min-height:76px;gap:10px}
+ .brand{min-width:94px}
+ .header-actions{gap:8px}
+ .theme-toggle,.menu-toggle{min-height:46px;font-size:12px}
+ .theme-toggle{padding-inline:10px}
+ .menu-toggle{padding-inline:12px;gap:10px}
+ nav{max-height:calc(100svh - 76px);overflow-y:auto;overscroll-behavior:contain;padding-block:15px}
+ nav a{min-height:50px;padding:14px 8px;font-size:16px}
+ nav a[aria-current=page]:after{left:8px;bottom:7px}
+ main{padding-inline:6%}
+ .hero{padding-top:32px;gap:28px}
+ .hero .actions{display:grid;grid-template-columns:1fr;gap:10px;max-width:100%}
+ .hero .button,.button{min-height:52px;font-size:12px;padding:16px 19px}
+ .hero .text-link{justify-content:space-between;min-height:46px;font-size:13px;padding-inline:2px}
+ .hero-description,.story-copy p,.entry-invitation p,.page-heading p,.editorial-grid p{font-size:14px}
+ .echo-art{aspect-ratio:1.5}
+ .school-names{gap:18px 26px}
+ .home-story{padding-top:40px}
+ .home-story h2,.entry-invitation h2{font-size:40px}
+ .announcement{padding:23px}
+ .announcement p,.notice strong,.notice span,.registration-context p,.form-hint{font-size:13px}
+ .page-heading{padding-top:34px}
+ .page-heading h1{font-size:42px}
+ label{font-size:14px}
+ input,select,textarea{font-size:16px;min-height:52px;padding:14px}
+ input::placeholder,textarea::placeholder{font-size:13px}
+ .field{gap:10px}
+ .form-grid{gap:24px}
+ .error,.form-bottom p,.error-summary p{font-size:13px}
+ .reorder button{min-width:46px;min-height:46px}
+ .table-scroll{scroll-padding-inline:12px}
+ table{font-size:13px}
+ td,tbody th{padding:20px 12px}
+ .footer-cta{min-height:48px;font-size:14px}
+ .footer-bottom{font-size:10px;gap:17px}
+ .quiet-note{font-size:11px;line-height:1.8}
+}

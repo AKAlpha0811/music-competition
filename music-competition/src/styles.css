@@ -75,3 +75,28 @@ header{background:var(--header-sky);backdrop-filter:blur(16px);-webkit-backdrop-
  radial-gradient(ellipse 70% 20% at 60% 25%,var(--aurora-pink),transparent 100%),
  radial-gradient(ellipse 90% 23% at 75% 45%,var(--aurora-deep),transparent 100%)}}
 @media(forced-colors:active){body::before,body::after{display:none}header{background:Canvas;backdrop-filter:none}}
+
+/* Carry the aurora through the lower content and into the closing stage. */
+main{position:relative;isolation:isolate}
+main::before{content:'';position:absolute;inset:650px 0 0;z-index:-1;pointer-events:none;opacity:.58;background:
+ radial-gradient(ellipse 55% 23% at 4% 27%,var(--aurora-violet),transparent 100%),
+ radial-gradient(ellipse 47% 24% at 100% 53%,var(--aurora-blue),transparent 100%),
+ radial-gradient(ellipse 50% 24% at 66% 94%,var(--aurora-pink),transparent 100%),
+ radial-gradient(ellipse 65% 31% at 18% 100%,var(--aurora-deep),transparent 100%);
+ mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 100%);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 100%)}
+body::after{height:100%;background-repeat:repeat-y;background-size:100% 950px;mask-image:none;-webkit-mask-image:none}
+.announcement{background:color-mix(in srgb,var(--surface) 88%,transparent)}
+footer{position:relative;isolation:isolate;background:
+ radial-gradient(ellipse 50% 110% at 6% 105%,rgba(99,43,172,.42),transparent 100%),
+ radial-gradient(ellipse 45% 100% at 61% 120%,rgba(161,47,122,.25),transparent 100%),
+ radial-gradient(ellipse 35% 120% at 100% 5%,rgba(40,70,156,.31),transparent 100%),#101012}
+footer::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.48;background:
+ radial-gradient(1px 1px at 8% 22%,#e7e1ff 50%,transparent 100%),
+ radial-gradient(.7px .7px at 22% 67%,#e7e1ff 50%,transparent 100%),
+ radial-gradient(.9px .9px at 37% 15%,#e7e1ff 50%,transparent 100%),
+ radial-gradient(.8px .8px at 52% 77%,#e7e1ff 50%,transparent 100%),
+ radial-gradient(1px 1px at 65% 32%,#e7e1ff 50%,transparent 100%),
+ radial-gradient(.7px .7px at 78% 61%,#e7e1ff 50%,transparent 100%),
+ radial-gradient(.9px .9px at 91% 18%,#e7e1ff 50%,transparent 100%)}
+@media(max-width:760px){main::before{top:900px}}
+@media(forced-colors:active){main::before,footer::before{display:none}footer{background:Canvas;color:CanvasText}}
